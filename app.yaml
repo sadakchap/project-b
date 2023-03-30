@@ -1,0 +1,21 @@
+#DONT TOUCH THE CONFIG BELOW - IT WILL INCREASE COST
+runtime: nodejs16
+service: projecta
+#env: flex
+# This sample incurs costs to run on the App Engine flexible environment.
+# The settings below are to reduce costs during testing and are not appropriate
+# for production use. For more information, see:
+# https://cloud.google.com/appengine/docs/flexible/nodejs/configuring-your-app-with-app-yaml
+
+#DONT TOUCH THE CONFIG BELOW - IT WILL INCREASE COST
+instance_class: F1
+#DONT TOUCH THE CONFIG BELOW - IT WILL INCREASE COST
+automatic_scaling:
+  max_instances: 1
+  min_instances: 0
+# manual_scaling:
+#   instances: 1
+# resources:
+#   cpu: 1
+#   memory_gb: 0.5
+#   disk_size_gb: 10
