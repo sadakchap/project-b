@@ -14,7 +14,7 @@ app.options('*', cors());
 app.get('/b-test', (req, res) => {
   res.send('workfing!!');
 })
-
-app.listen(9000, () => {
-  console.log('listening to server: 9000');
+const port = process.env.PORT || 9000;
+app.listen(process.env.PORT || 9000, () => {
+  console.log('listening to server: ', port);
 });
